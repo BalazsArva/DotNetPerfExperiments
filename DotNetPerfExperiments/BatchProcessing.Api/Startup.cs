@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using BatchProcessing.Api.Services;
+using BatchProcessing.Api.Services.UtilityServices;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -18,6 +20,9 @@ namespace BatchProcessing.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddSingleton<IBatchProcessorService, BatchProcessorService>();
+            services.AddSingleton<IBase64FileContentParser, YieldingBase64FileContentParser>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
