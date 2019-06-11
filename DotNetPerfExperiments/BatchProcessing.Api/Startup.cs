@@ -22,7 +22,10 @@ namespace BatchProcessing.Api
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddSingleton<IBatchProcessorService, BatchProcessorService>();
+
             services.AddSingleton<IBase64FileContentParser, YieldingBase64FileContentParser>();
+            //services.AddSingleton<IBase64FileContentParser, ListBase64FileContentParser>();
+            //services.AddSingleton<IBase64FileContentParser, LinkedListBase64FileContentParser>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
