@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BatchProcessing", "BatchPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchProcessing.Api", "BatchProcessing.Api\BatchProcessing.Api.csproj", "{269890B2-E5A2-4731-BB8A-9938EB743D36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BatchProcessing.ApiClient", "BatchProcessing.ApiClient\BatchProcessing.ApiClient.csproj", "{E9FEB2FD-AEE4-4035-A795-3D6D4A0F7EE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +19,17 @@ Global
 		{269890B2-E5A2-4731-BB8A-9938EB743D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{269890B2-E5A2-4731-BB8A-9938EB743D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{269890B2-E5A2-4731-BB8A-9938EB743D36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9FEB2FD-AEE4-4035-A795-3D6D4A0F7EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9FEB2FD-AEE4-4035-A795-3D6D4A0F7EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9FEB2FD-AEE4-4035-A795-3D6D4A0F7EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9FEB2FD-AEE4-4035-A795-3D6D4A0F7EE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{269890B2-E5A2-4731-BB8A-9938EB743D36} = {84D930AD-EBDB-4934-955F-136EC0BF06E9}
+		{E9FEB2FD-AEE4-4035-A795-3D6D4A0F7EE7} = {84D930AD-EBDB-4934-955F-136EC0BF06E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F249AF8-CF0E-485F-9EB2-9F3C66791B65}
